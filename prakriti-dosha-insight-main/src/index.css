@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Ayurvedic wellness color palette */
+    --background: 32 40% 96%;
+    --foreground: 28 25% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 28 25% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 28 25% 20%;
+
+    /* Sage green primary */
+    --primary: 140 25% 45%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 140 30% 65%;
+    --primary-dark: 140 30% 30%;
+
+    /* Warm beige secondary */
+    --secondary: 35 35% 75%;
+    --secondary-foreground: 28 25% 20%;
+
+    /* Muted earth tones */
+    --muted: 32 25% 88%;
+    --muted-foreground: 28 15% 45%;
+
+    /* Earthy brown accent */
+    --accent: 25 45% 55%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 32 20% 85%;
+    --input: 32 20% 85%;
+    --ring: 140 25% 45%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(140 25% 45%), hsl(140 30% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(140 30% 50% / 0.15), hsl(35 35% 75% / 0.15));
+    --gradient-subtle: linear-gradient(180deg, hsl(32 40% 98%), hsl(32 30% 94%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(140 25% 45% / 0.15);
+    --shadow-glow: 0 0 30px hsl(140 30% 55% / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 28 30% 12%;
+    --foreground: 32 30% 90%;
+
+    --card: 28 25% 16%;
+    --card-foreground: 32 30% 90%;
+
+    --popover: 28 25% 16%;
+    --popover-foreground: 32 30% 90%;
+
+    --primary: 140 35% 55%;
+    --primary-foreground: 28 25% 10%;
+    --primary-light: 140 40% 65%;
+    --primary-dark: 140 30% 40%;
+
+    --secondary: 35 25% 30%;
+    --secondary-foreground: 32 30% 90%;
+
+    --muted: 28 20% 22%;
+    --muted-foreground: 32 15% 60%;
+
+    --accent: 25 40% 45%;
+    --accent-foreground: 32 30% 95%;
+
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 32 30% 95%;
+
+    --border: 28 20% 22%;
+    --input: 28 20% 22%;
+    --ring: 140 35% 55%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(140 35% 55%), hsl(140 40% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(140 35% 55% / 0.1), hsl(35 25% 30% / 0.1));
+    --gradient-subtle: linear-gradient(180deg, hsl(28 30% 14%), hsl(28 25% 16%));
+
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 30px hsl(140 35% 55% / 0.15);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
