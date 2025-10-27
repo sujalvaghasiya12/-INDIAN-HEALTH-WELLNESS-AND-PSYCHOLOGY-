@@ -11,7 +11,7 @@ A beautiful, modern web application that helps users discover their Ayurvedic co
 
 ### 🔐 Authentication (Frontend Demo)
 - **Login Page**: Email and password authentication (mocked)
-- **Signup Page**: User registration with email verification message
+- **Signup Page**: User registration with email 
 - Local state management for user sessions
 - Toast notifications for user feedback
 
