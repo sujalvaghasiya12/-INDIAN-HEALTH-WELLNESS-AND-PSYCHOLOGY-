@@ -119,5 +119,7 @@ This is currently a **frontend demo**. Planned backend integrations include:
 - [ ] Progress tracking dashboard
 - [ ] Community features and wellness tips
 
+## 🔮 Deployments
 
+ - https://067project01.vercel.app/
 
