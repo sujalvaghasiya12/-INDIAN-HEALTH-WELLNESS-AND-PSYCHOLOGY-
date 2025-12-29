@@ -121,5 +121,4 @@ This is currently a **frontend demo**. Planned backend integrations include:
 
 ## 🔮 Deployments
 
- - https://067project01.vercel.app/
-
+https://bharat-health-mind.vercel.app/
